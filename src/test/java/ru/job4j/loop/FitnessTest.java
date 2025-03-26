@@ -39,4 +39,13 @@ class FitnessTest {
         int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenIvanLessByThreeNik() {
+        int ivan = 30;
+        int nik = 100;
+        int result = Fitness.calc(ivan, nik);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
 }
